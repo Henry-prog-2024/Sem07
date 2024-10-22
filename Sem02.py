@@ -27,6 +27,7 @@ if option == "Agregar usuario":
         else:
             st.error("El nombre no puede estar vacio")
 elif option == "Mostrar usuario":
-    mostrar_usuarios()
+    if st.button("Mostrar usuarios"):
+        mostrar_usuarios()
 
 
