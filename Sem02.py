@@ -9,7 +9,7 @@ def agregar_usuario(nombre):
     st.success(f"Usuario:{nombre} agregado")
 
     #Funcion para mostrar usuarios
-    def mostrar_usuarios()
+    def mostrar_usuarios():
     if usuarios:
         st.write("Lista de usuarios")
         for usuario in usuario:
