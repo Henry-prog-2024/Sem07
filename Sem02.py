@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Inicialización de la lista de usuarios
-usuarios = []
+usuarios = [Juan, Vlady]
 
 # Función para agregar un usuario
 def agregar_usuario(nombre):
