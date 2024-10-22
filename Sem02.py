@@ -20,11 +20,11 @@ def mostrar_usuarios():
     #else:
      #   st.warning("No hay usuarios registrados.")
     if usuarios:
-        print("Lista de usuarios:")
+        st.write("Lista de usuarios:")
         for usuario in usuarios:
-            print(f"- {usuario}")
+            st.write(f"- {usuario}")
     else:
-        print("No hay usuarios registrados.")
+        st.warning("No hay usuarios registrados.")
 
 #Menú Principal
 st.title("Gestión de Usuarios")
