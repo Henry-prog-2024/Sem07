@@ -18,7 +18,7 @@ def agregar_usuario(nombre):
             st.warning("No hay usuarios registrados: ")
 #Menu principal
 st.title("Gestión de usuarios")
-option = st.selectbox("Selecciona una opción:", ["Agregar usuasio", "Mostrar usuario"])
+option = st.selectbox("Selecciona una opción:", ["Agregar usuario", "Mostrar usuario"])
 if option == "Agregar usuario":
     nombre = st.text_input ("Nombre del usuario: ")
     if st.botton("Agregar"):
