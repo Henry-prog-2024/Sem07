@@ -1,14 +1,14 @@
 import streamlit as st
 
-#Inicialización de variables
+#Inicialización de variables 
 usuarios = []
 
-#Funcion para agragar un usuario
+#Función para agregar un usuario
 def agregar_usuario(nombre):
     usuarios.append(nombre)
-    st.success(f"Usuario:{nombre} agregado")
+    st.success(f"Usuario {nombre} agregado.")
 
-#Funcion para mostrar usuarios
+#Función para mostrar usuarios
 def mostrar_usuarios():
     if usuarios:
         st.write("Lista de usuarios:")
@@ -17,18 +17,19 @@ def mostrar_usuarios():
     else:
         st.warning("No hay usuarios registrados.")
 
-#Menu principal
-st.title("Gestión de usuarios")
-option = st.selectbox("Selecciona una opción:", ["Agregar usuario", "Mostrar usuario"])
-if option == "Agregar usuario":
-    nombre = st.text_input ("Nombre del usuario: ")
+#Menú Principal
+st.title("Gestión de Usuarios")
+
+opcion = st.selectbox("Selecciona una opción", ["Agregar Usuario", "Mostrar Usuario"])
+
+if opcion == "Agregar Usuario":
+    nombre = st.text_input("Nombre del usuario")
     if st.button("Agregar"):
         if nombre:
             agregar_usuario(nombre)
         else:
-            st.error("El nombre no puede estar vacio")
-elif option == "Mostrar usuario":
+            st.error("El nombre no puede estar vacío")
+
+elif opcion == "Mostrar Usuarios":
     if st.button("Mostrar usuarios"):
         mostrar_usuarios()
-
-
