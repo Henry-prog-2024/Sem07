@@ -1,6 +1,6 @@
 import streamlit as st
 
-#Inicialización de variables 
+# Inicialización de la lista de usuarios
 usuarios = []
 
 # Función para agregar un usuario
