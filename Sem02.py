@@ -10,11 +10,11 @@ def agregar_usuario(nombre):
 
     #Funcion para mostrar usuarios
     def mostrar_usuarios():
-    if usuarios:
-        st.write("Lista de usuarios")
-        for usuario in usuario:
-    else
-        st.warning("No hay usuarios registrados: ")
+        if usuarios:
+            st.write("Lista de usuarios")
+            for usuario in usuario:
+        else:
+            st.warning("No hay usuarios registrados: ")
 #Menu principal
 st.title("Gestión de usuarios")
 option = st.selectbox("Selecciona una opción:", ["Agregar usuasio", "Mostrar usuario"])
