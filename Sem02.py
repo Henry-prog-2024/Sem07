@@ -15,7 +15,7 @@ def agregar_usuario(nombre):
             for usuario in usuario:
                 st.write(f"- {usuario}")
         else:
-            st.warning("No hay usuarios registrados: ")
+            st.warning("No hay usuarios registrados")
 #Menu principal
 st.title("Gestión de usuarios")
 option = st.selectbox("Selecciona una opción:", ["Agregar usuario", "Mostrar usuario"])
