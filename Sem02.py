@@ -21,7 +21,7 @@ st.title("Gestión de usuarios")
 option = st.selectbox("Selecciona una opción:", ["Agregar usuario", "Mostrar usuario"])
 if option == "Agregar usuario":
     nombre = st.text_input ("Nombre del usuario: ")
-    if st.botton("Agregar"):
+    if st.button("Agregar"):
         if nombre:
             agregar_usuario(nombre)
         else:
