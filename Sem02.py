@@ -3,10 +3,13 @@ import streamlit as st
 #Inicialización de variables 
 usuarios = []
 
-#Función para agregar un usuario
+# Función para agregar un usuario
 def agregar_usuario(nombre):
-    usuarios.append(nombre)
-    st.success(f"Usuario {nombre} agregado.")
+    if nombre not in usuarios:  # Verificar si el usuario ya existe
+        usuarios.append(nombre)
+        st.success(f"Usuario {nombre} agregado.")
+    else:
+        st.warning(f"El usuario {nombre} ya está registrado.")
 
 #Función para mostrar usuarios
 def mostrar_usuarios():
