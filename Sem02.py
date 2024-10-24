@@ -5,20 +5,11 @@ usuarios = ["Juan", "Vlady"]
 
 # Función para agregar un usuario
 def agregar_usuario(nombre):
-    if nombre not in usuarios:  # Verificar si el usuario ya existe
-        usuarios.append(nombre)
-        st.success(f"Usuario {nombre} agregado.")
-    else:
-        st.warning(f"El usuario {nombre} ya está registrado.")
+    usuarios.append(nombre)
+    st.success(f"Usuario {nombre} agregado.")
 
 #Función para mostrar usuarios
 def mostrar_usuarios():
-    #if usuarios:
-     #   st.write("Lista de usuarios:")
-      #  for usuario in usuarios:
-       #     st.write(f"- {usuario}")
-    #else:
-     #   st.warning("No hay usuarios registrados.")
     if usuarios:
         st.write("Lista de usuarios:")
         for usuario in usuarios:
