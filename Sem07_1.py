@@ -5,7 +5,7 @@ def verificar_automoviles():
     st.title("Centro de verificación de automóviles")
 
 #Lista para verificar los puntos contaminantes.
-If "puntos_contaminantes" not in st.session_state:
+If 'puntos_contaminantes' not in st.session_state:
     st.session_state.puntos_contaminantes =[]
 
     # Input para los puntos contaminanttes del automovil
