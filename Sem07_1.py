@@ -2,7 +2,7 @@ import streamlit as st
 
 #Función principal para verificar automóviles
 def verificar_automoviles():
-st.title("Centro de verificación de automóviles")
+    st.title("Centro de verificación de automóviles")
 
 #Lista para verificar los puntos contaminantes.
 If 'puntos_contaminantes' not in st.session_state:
