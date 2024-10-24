@@ -4,9 +4,9 @@ import streamlit as st
 def verificar_automoviles():
     st.title("Centro de verificación de automóviles")
 
-#Lista para verificar los puntos contaminantes.
-If 'puntos_contaminantes' not in st.session_state:
-    st.session_state.puntos_contaminantes =[]
+    #Lista para verificar los puntos contaminantes.
+    If 'puntos_contaminantes' not in st.session_state:
+        st.session_state.puntos_contaminantes =[]
 
     # Input para los puntos contaminanttes del automovil
     puntos = st.numbers_input("Ingrese los puntos fundamentales del automovil", min_value=0.0, step=0.1)
