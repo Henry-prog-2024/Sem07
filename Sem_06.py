@@ -18,8 +18,7 @@ if st.button("Ejecutar Ejercicio 2"):
 #Ejercicio 3: Imprimir la tabla de multiplicar del número ingresado
 st.subheader("Ejercicio 3: Tabla de multiplicar")
 if st.button("Ejecutar Ejercicio 3"):
-   # num = st.number_input("Ingrese un número")
-   num = 5
+    num = st.number_input("Ingrese un número")
     for i in range (1,12):
         num = num * i 
     st.write(num)
