@@ -9,8 +9,16 @@ if st.button("Ejecutar Ejercicio 1"):
     for i in range(10):
         st.write("Hola Mundo")
 
-#Ejercicio 2: Imprimir los 10 primeros números'
+#Ejercicio 2: Imprimir los 10 primeros números
 st.subheader("Ejercicio 2: imprimir los 10 primeros números")
 if st.button("Ejecutar Ejercicio 2"):
     for i in range(1,11):
         st.write(i)
+
+#Ejercicio 3: Imprimir la tabla de multiplicar del número ingresado
+st.subheader("Ejercicio 3: Tabla de multiplicar")
+if st.button("Ejecutar Ejercicio 3"):
+    numero=st.text_input("Ingrese un número")
+    for i in range (1,12)
+        numero = numero * i 
+    st.write(numero)
