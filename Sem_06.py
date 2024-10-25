@@ -22,4 +22,4 @@ if st.button("Ejecutar Ejercicio 3"):
    num = 5
     for i in range (1,12):
         num = num * i 
-    st.write(numero)
+    st.write(num)
