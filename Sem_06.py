@@ -12,6 +12,6 @@ if st.button("Ejecutar Ejercicio 1"):
 #Ejercicio 2: Imprimir los 10 primeros números'
 st.subheader("Ejercicio 2: imprimir los 10 primeros números")
 if st.button("Ejecutar Ejercicio 2"):
-    i=1:
+    i=1
     for i in range(10):
         st.write(i)
