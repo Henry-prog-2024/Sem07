@@ -11,7 +11,7 @@ def validate_data(marca, modelo, kilometraje):
         return "El kilometraje debe ser un número válido."
     return None
 
-def main()
+def main():
     st.title("Registro de automovil")
     st.write("Ingrese los datos del automóvil a continuación")
     ##Registro por el usuario
