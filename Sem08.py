@@ -7,9 +7,9 @@ def validate_data(marca, modelo, kilometraje):
         kilometraje = float(kilometraje)
         if kilometraje < 0:
             return "El kilometraje no puede ser menor de 0."
-        except valueError:
-            return "Ell kilometraje debe ser un número válido."
-        return None
+    except ValueError:
+        return "El kilometraje debe ser un número válido."
+    return None
 
 def main()
     st.title("Registro de automovil")
