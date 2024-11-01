@@ -4,9 +4,6 @@ import streamlit as st
 #introducidos.
 
 def main():
-    suma = 0
-    contador = 0
-
     while True:
         numero = st.text_input("Introduce un número (0 para terminar): ")
         if numero == 0:
