@@ -12,8 +12,8 @@ def main():
         if numero == 0:
             break
         
-        suma += numero
-        contador += 1
+        suma = suma + numero
+        contador = contador + 1
     if contador > 0:
         media = suma / contador
         st.write(f"Suma: {suma}")
