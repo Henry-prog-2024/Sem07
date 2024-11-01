@@ -3,8 +3,6 @@ import streamlit as st
 #cero. Debe imprimir la suma y la media de todos los números
 #introducidos.
 
-import streamlit as st
-
 def main():
     st.title("Calcular SUMA y MEDIA")
     
