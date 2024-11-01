@@ -11,7 +11,7 @@ def main():
     numeros = []
     
     while True:
-        numero = st.number_input("Introduce un número (0 para terminar):", min_value=1)
+        numero = st.number_input("Introduce un número (0 para terminar):", step=1.0)
         
         if numero == 0:
             break
