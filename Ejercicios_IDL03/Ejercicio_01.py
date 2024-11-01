@@ -5,7 +5,8 @@ import streamlit as st
 
 def main():
     while True:
-        numero = st.text_input("Introduce un número (0 para terminar): ")
+        numero = st.text_input("Introduce un número (0 para terminar):")
+        numero = float(numero)
         if numero == 0:
             break
         
