@@ -1,29 +1,50 @@
-import streamlit as st
+import random  # Importar la biblioteca random
+
+def rellenar_array(tamano):
+    """Rellena un array con números aleatorios."""
+    return [random.randint(1, 100) for _ in range(tamano)]
+
+def copiar_array(original):
+    """Copia un array y lo devuelve."""
+    return original.copy()
+
+def mostrar_array(array):
+    """Muestra todos los valores del array."""
+    print("Contenido del array:", array)
+
+def ordenar_burbuja(array):
+    """Ordena el array utilizando el método de burbuja."""
+    n = len(array)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if array[j] > array[j + 1]:
+                # Intercambiar si el elemento encontrado es mayor que el siguiente
+                array[j], array[j + 1] = array[j + 1], array[j]
+    return array
 
 def main():
-    st.title("Calculadora de Suma y Media")
+    # Definir el tamaño del array
+    tamano = int(input("Introduce el tamaño del array: "))
+    
+    # Rellenar el array
+    array = rellenar_array(tamano)
+    
+    # Mostrar el array original
+    mostrar_array(array)
+    
+    # Copiar el array a otro
+    array_copia = copiar_array(array)
+    
+    # Ordenar el array original
+    array_ordenado = ordenar_burbuja(array)
+    
+    # Mostrar resultados
+    print("Array ordenado:")
+    mostrar_array(array_ordenado)
+    
+    print("Copia del array original:")
+    mostrar_array(array_copia)
 
-    # Usar una lista para almacenar los números
-    if 'numeros' not in st.session_state:
-        st.session_state.numeros = []
-
-    # Entrada del número
-    numero = st.number_input("Introduce un número (0 para terminar):", step=1.0)
-
-    # Añadir el número a la lista si no es 0
-    if numero != 0:
-        st.session_state.numeros.append(numero)
-
-    # Mostrar resultados si hay números
-    if st.session_state.numeros:
-        suma = sum(st.session_state.numeros)
-        media = suma / len(st.session_state.numeros)
-        st.write(f"Suma: {suma}")
-        st.write(f"Media: {media}")
-
-    # Mostrar un mensaje si no se introdujeron números
-    if len(st.session_state.numeros) == 0 and numero == 0:
-        st.write("No se introdujeron números.")
-
+# Llamar a la función principal
 if __name__ == "__main__":
     main()
