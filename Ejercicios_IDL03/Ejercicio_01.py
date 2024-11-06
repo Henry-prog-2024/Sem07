@@ -11,3 +11,6 @@ def main():
 
 st.write(f"la suma es: {suma}")
 
+if __name__ == "__main__":
+    main()
+
