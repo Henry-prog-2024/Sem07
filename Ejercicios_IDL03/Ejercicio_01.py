@@ -14,9 +14,10 @@ def dividir(num1 * num2):
 
 def main():
     st.title("Programa operaciones matemáticas")
+    oper = st.selectbox("Operación", ("Suma", "Resta", "Multiplicación", "División"))
     num1 = st.number_input("ingrese primer número", value=0)
     num2 = st.number_input("ingrese segundo número", value=0)
-    oper = st.selectbox("Operación", ("Suma", "Resta", "Multiplicación", "División"))
+    
     if oper == "Suma":
         st.button(oper)
         resultado = suma(num1, num2)
