@@ -1,28 +1,7 @@
 import streamlit as st
-#Algoritmo que pida números hasta que se introduzca un
-#cero. Debe imprimir la suma y la media de todos los números
-#introducidos.
+st.title("ESte programa es mío")
+num1 = st.numero("ingrese primer número")
+num2 = st.numero("ingrese segundo número")
+sum= sum1 + sum2
+st.write(f"la suma es: {sum}")
 
-def main():
-    st.title("Calcular SUMA y MEDIA")
-    
-    numeros = []
-    
-    while True:
-        numero = st.number_input("Introduce un número (0 para terminar):", step=1.0)
-        
-        if numero == 0:
-            break
-            
-        numeros.append(numero)
-
-    if numeros:
-        suma = sum(numeros)
-        media = suma / len(numeros)
-        st.write(f"Suma: {suma}")
-        st.write(f"Media: {media}")
-    else:
-        st.write("No se introdujeron números.")
-
-if __name__ == "__main__":
-    main()
