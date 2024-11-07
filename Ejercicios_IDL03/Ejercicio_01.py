@@ -19,13 +19,16 @@ def main():
     num2 = st.number_input("ingrese segundo número", value=0)
     
     if oper == "Suma":
-        st.button(oper)
         resultado = suma(num1, num2)
-        st.write(f"la suma es: {resultado}")
     if oper == "Resta":
-        st.button(oper)
         resultado = resta(num1, num2)
-        st.write(f"la resta es: {resultado}")
+    if oper == "Multiplicación":
+        resultado = multiplicar(num1, num2)
+    if oper == "División":
+        resultado = dividir(num1, num2)
+
+st.button(oper)
+st.write(f"la resta es: {resultado}")
 
 
 if __name__ == "__main__":
