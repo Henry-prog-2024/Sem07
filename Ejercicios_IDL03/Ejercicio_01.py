@@ -27,8 +27,8 @@ def main():
     if oper == "División":
         resultado = dividir(num1, num2)
 
-    st.button(oper)
-    st.write(f"la resta es: {resultado}")
+    if st.button(oper)
+        st.write(f"la resta es: {resultado}")
 
 if __name__ == "__main__":
     main()
