@@ -17,6 +17,7 @@ def main():
     oper = st.selectbox("Operación", ("Suma", "Resta", "Multiplicación", "División"))
     num1 = st.number_input("ingrese primer número", value=0)
     num2 = st.number_input("ingrese segundo número", value=0)
+    st.button("Operación")
     
     if oper == "Suma":
         st.button(oper)
